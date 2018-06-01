@@ -228,7 +228,7 @@ def batch_gen(pivot, data, meta, coords, train_flag=True):
                 features[i][j][:len(data[shuffled_indexes[i]][2][j])] = data[shuffled_indexes[i]][2][j]
                 features[i][j][len(data[shuffled_indexes[i]][2][j]) + data[shuffled_indexes[i]][4][j]] = 1
                 features[i][j][len(data[shuffled_indexes[i]][2][j]) + ent_num + data[shuffled_indexes[i]][3][j]] = 1
-            for j in range(len(paragraph), CONTEXT_MAX_SIZE):
+            for j in range(len(paragraph), C_MAX_SIZE):
                 context_embedded[i][j] = meta['embedding'][0]
 
 
@@ -277,7 +277,7 @@ def get_batch(pivot, data, meta, coords, train_flag=True):
             features[i][j][:len(data[shuffled_indexes[i]][2][j])] = data[shuffled_indexes[i]][2][j]
             features[i][j][len(data[shuffled_indexes[i]][2][j]) + data[shuffled_indexes[i]][4][j]] = 1
             features[i][j][len(data[shuffled_indexes[i]][2][j]) + ent_num + data[shuffled_indexes[i]][3][j]] = 1
-        for j in range(len(paragraph), CONTEXT_MAX_SIZE):
+        for j in range(len(paragraph), C_MAX_SIZE):
             context_embedded[i][j] = meta['embedding'][0]
         
         
