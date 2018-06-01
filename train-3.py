@@ -134,7 +134,7 @@ def main():
     print("THE FOLLOWING LOGS WILL SHOW YOU HOW LEARNING PROCEEDS")
     print("*"*80)
     
-    if EP_FLAG=True:
+    if EP_FLAG:
         for epochs in range(EPOCHS):
             i = -1
             print("EPOCHE: " + str(epochs + 1))
