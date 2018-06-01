@@ -498,8 +498,8 @@ def F_temp(beg_p, end_p, beg_r, end_r):
 def F_score(beg_predicted, end_predicted, beg_real, end_real, size):
     result = 0
     for i in range(size):
-        beg_r = beg_v[i]
-        end_r = end_v[i]
+        beg_r = beg_real[i]
+        end_r = end_real[i]
         beg_p = np.argmax(beg_predicred[i])
         end_p = np.argmax(end_predicted[i])
         
