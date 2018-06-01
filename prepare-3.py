@@ -187,7 +187,7 @@ def embedder(data, model_s):
 def batch_gen(pivot, data, meta, coords, train_flag=True):
     
     data_size = len(data)
-    shuffled_indexes = np.arrange(0, data_size, 1)
+    shuffled_indexes = np.arange(0, data_size, 1)
     np.random.shuffle(shuffled_indexes)
     
     num_batches = data_size // pivot
