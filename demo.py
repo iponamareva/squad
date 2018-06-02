@@ -6,10 +6,7 @@ import collections
 import random
 import gensim
 import tensorflow as tf
- 
-from nltk.tokenize import word_tokenize
 from tqdm import tqdm_notebook as tqdm
-from nltk.tokenize import RegexpTokenizer
 
 from constants import *
 from prepare import *
