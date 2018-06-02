@@ -3,12 +3,10 @@
 import wget
 import numpy as np
 import msgpack
-
 from nltk.tokenize import RegexpTokenizer
 from gensim.models.keyedvectors import KeyedVectors
 from gensim.models import FastText
 import fastText
-
 from fastText import load_model
 from tqdm import tqdm_notebook as tqdm
 
