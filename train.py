@@ -6,9 +6,8 @@ import numpy as np
 import collections
 import random
 import gensim
-from nltk.tokenize import word_tokenize
 from tqdm import tqdm_notebook as tqdm
-from nltk.tokenize import RegexpTokenizer
+
 
 from prepare import *
 from constants import *
