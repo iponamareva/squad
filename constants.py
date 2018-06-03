@@ -7,8 +7,10 @@ TRAINING_EPOCHS = 2000
 LSTM_CELL_HIDDEN_SIZE = 200
 HIDDEN_SIZE = 200
 FEATURES_SIZE = 73
-USE_DEMO_MODEL_PATH = 'model_trained'
-TEST_MODEL_PATH = 'model_trained'
+#USE_DEMO_MODEL_PATH = 'model_trained'
+#TEST_MODEL_PATH = 'model_trained'
+USE_DEMO_MODEL_PATH = "model_trained_step-1800"
+TEST_MODEL_PATH = "model_trained_step-1800"
 
 SAVE_MODEL_PATH = './model_trained_1'
 SAVE_STEP_MODEL_PATH = './model_trained_step_1'
