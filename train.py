@@ -6,8 +6,10 @@ import numpy as np
 import collections
 import random
 import gensim
-from tqdm import tqdm_notebook as tqdm
 
+from nltk.tokenize import word_tokenize
+from tqdm import tqdm_notebook as tqdm
+from nltk.tokenize import RegexpTokenizer
 
 from prepare import *
 from constants import *
@@ -182,7 +184,7 @@ def main():
                 if i % SAVER_STEP == 0 and i != 0:
                     saver.save(sess, SAVE_STEP_MODEL_PATH, global_step=i)
     
-    if EP_FLAG=False:
+    if EP_FLAG==False:
         for i in (range(ITERATIONS)):
             (arg1_c, arg2_cl, arg3_f, arg4_q, arg5_qm, arg6_s, arg7_e) = get_batch(BATCH_SIZE, train, meta, None)
 
@@ -226,7 +228,7 @@ def main():
                 print("-"*80)
 
             if i % SAVER_STEP == 0 and i != 0:
-                saver.save(sess, SAVE_STEP_MODEL_PATH, global_step=i)
+                saver.save(sess, SAVE_STEP_MODEL_PATH, global_step=epochs*2000 +i)
             
     saver.save(sess, SAVE_MODEL_PATH)
 

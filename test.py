@@ -17,7 +17,7 @@ from nltk.tokenize import RegexpTokenizer
 def main():
     sess = tf.Session() 
     
-    import_path = SAVE_MODEL_PATH + ".meta"
+    import_path = TEST_MODEL_PATH + ".meta"
     #saver = tf.train.import_meta_graph(TEST_MODEL_PATH)
     saver = tf.train.import_meta_graph(import_path)
     saver.restore(sess, tf.train.latest_checkpoint('./'))

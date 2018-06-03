@@ -3,10 +3,12 @@
 import wget
 import numpy as np
 import msgpack
+
 from nltk.tokenize import RegexpTokenizer
 from gensim.models.keyedvectors import KeyedVectors
 from gensim.models import FastText
 import fastText
+
 from fastText import load_model
 from tqdm import tqdm_notebook as tqdm
 
@@ -498,7 +500,7 @@ def F_score(beg_predicted, end_predicted, beg_real, end_real, size):
     for i in range(size):
         beg_r = beg_real[i]
         end_r = end_real[i]
-        beg_p = np.argmax(beg_predicred[i])
+        beg_p = np.argmax(beg_predicted[i])
         end_p = np.argmax(end_predicted[i])
         
         result += F_temp(beg_p, end_p, beg_r, end_r)
