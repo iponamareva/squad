@@ -20,7 +20,8 @@ wget, numpy, msgpack, nltk, gensim, fastText, tqdm.
 
 https://www.dropbox.com/s/fs78ylqddd7tlkh/model_trained_step-1800.data-00000-of-00001?dl=0
 https://www.dropbox.com/s/y78c6gki1fazti7/model_trained_step-1800.index?dl=0
-https://www.dropbox.com/s/lilpwq2ugs28j35/model_trained_step-1800.meta?dl=0
+https://www.dropbox.com/s/lilpwq2ugs28j35/model_trained_step-1800.meta?dl=0 ,
+а также файл checkpoint из этого репозитория.
 
 ##  Инструкции по запуску и описание скриптов
 
